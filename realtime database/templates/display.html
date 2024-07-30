@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quotes</title>
+</head>
+<body>
+    <h1>Quotes</h1>
+    <ul>
+        {% if quotes %}
+            {% for key, quote in quotes.items() %}
+                <li>{{ quote['text'] }} - {{ quote['said_by'] }}</li>
+            {% endfor %}
+        {% else %}
+            <li>No quotes available.</li>
+        {% endif %}
+    </ul>
+</body>

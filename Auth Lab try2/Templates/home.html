@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body style="background-color: #00D5F2">
+    <center style="margin: 0px; padding: 0px">
+        <h1>Logging Out</h1>
+        <a href="/signout"><button>Signout</button></a>
+        <hr style="color: #FFEC2D; background-color: #FFEC2D; height: 2px; width: 60%;">
+        <h3>Enter a quote</h3>
+        <form method="POST" action="/home">
+            <div>
+                <input type="text" name="quote" placeholder="Write Your Quote" required>
+            </div>
+            <div>
+                <input type="submit" value="Submit"/>
+            </div>
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Book Collection</h1>
+<div class="books">
+    {% for book in books %}
+        <div class="book">
+            <img src="{{ book.cover_url }}" alt="{{ book.title }}">
+            <a href="{{ url_for('book', book_id=book.id) }}">{{ book.title }}</a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

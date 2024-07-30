@@ -1,0 +1,10 @@
+{% block content %}
+<h1>{{ book.title }}</h1>
+<p>Author: {{ book.author }}</p>
+<img src="{{ book.cover_url }}" alt="{{ book.title }}">
+<form method="POST">
+    <button type="submit" name="action" value="wishlist">Add to Wishlist</button>
+    <button type="submit" name="action" value="reading">Add to Reading List</button>
+    <button type="submit" name="action" value="finished">Add to Finished List</button>
+</form>
+{% endblock %}

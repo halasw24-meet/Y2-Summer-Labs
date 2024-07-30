@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+       
+        h1 {
+            text-align: center;
+            display: inline-block;
+            margin-right: 1em;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            padding: 20px;
+        }
+        .item {
+            text-align: center;
+        }
+        .item img {
+            width: 100%;
+            height: 100%;
+        }
+        .item a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body style="background-color: #FFB6C1">
+    <hr style="color: #FFEC2D; background-color: #FFEC2D; height: 2px; width: 100%;">
+    <center>
+        <a href="{{url_for('profile')}}"><h1 style="font-family:tempus sans itc;color: black">PROFILE</h1></a>
+        <a href= "{{url_for('classics')}}" ><h1 style="font-family:tempus sans itc; color: black; ">CLASSICS</h1></a> 
+        <a href="{{url_for('romance')}}"><h1 style="font-family:tempus sans itc; color: black;">ROMANCE</h1></a>
+        <a href="{{url_for('home')}}"><h1 style="font-family:tempus sans itc; color: darkred;">HOME</h1></a> 
+        <a href="{{url_for('mentalhealth')}}"><h1 style="font-family:tempus sans itc;color: black">MENTAL HEALTH</h1></a>
+        <a href="{{url_for('fantasy')}}"><h1 style="font-family:tempus sans itc;color: black">FANTASY</h1></a>  
+        <a href="{{url_for('mystery')}}"><h1 style="font-family:tempus sans itc;color: black">MYSTERY</h1></a>
+    </center> 
+    <hr style="color: #FFEC2D; background-color: #FFEC2D; height: 2px; width: 100%;">
+    <p>welcome to our books website!</p> 
+    <h1>Logging Out</h1>
+    <a href="/signout"><button>Signout</button></a>
+</body>
+</html>

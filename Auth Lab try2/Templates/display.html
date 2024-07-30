@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Quotes</title>
+</head>
+<body style="background-color: #00D5F2">
+    <center style="margin: 0px; padding: 0px">
+        <h1>Quotes Submitted</h1>
+        <hr style="color: #FFEC2D; background-color: #FFEC2D; height: 2px; width: 60%;">
+        <ul>
+            {% for quote in quotes %}
+                <li>{{ quote }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/home"><button>Back to Home</button></a>
+    </center>
+</body>
+</html>

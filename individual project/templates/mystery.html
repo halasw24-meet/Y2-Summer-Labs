@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery</title>
+    <style>
+       
+        h1 {
+            text-align: center;
+            display: inline-block;
+            margin-right: 1em;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            padding: 20px;
+        }
+        .item {
+            text-align: center;
+        }
+        .item img {
+            width: 100%;
+            height: 100%;
+        }
+        .item a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <hr style="color: #FFEC2D; background-color: #FFEC2D; height: 2px; width: 100%;">
+    <center>
+        <a href= "{{url_for('classics')}}" ><h1 style="font-family:tempus sans itc; color: black; ">CLASSICS</h1></a> 
+        <a href="{{url_for('romance')}}"><h1 style="font-family:tempus sans itc; color: black;">ROMANCE</h1></a>
+        <a href="{{url_for('home')}}"><h1 style="font-family:tempus sans itc; color: black;">HOME</h1></a> 
+        <a href="{{url_for('mentalhealth')}}"><h1 style="font-family:tempus sans itc;color: black">MENTAL HEALTH</h1></a>
+        <a href="{{url_for('fantasy')}}"><h1 style="font-family:tempus sans itc;color: black">FANTASY</h1></a>  
+        <a href="{{url_for('mystery')}}"><h1 style="font-family:tempus sans itc;color: darkred">MYSTERY</h1></a>
+    </center> 
+    <hr style="color: #FFEC2D; background-color: #FFEC2D; height: 2px; width: 100%;">
+    <div class="container">
+        <div class="item">
+            <img src="https://prodimage.images-bn.com/pimages/9781250095299_p0_v2_s1200x630.jpg" alt="if we were liars" width="350" height="350">
+            <a href="lists.html">If We Were Liars</a>
+        </div>
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/81AHTyq2wVL._AC_UF1000,1000_QL80_.jpg" alt="the housemaid" width="350" height="350">
+            <a href="lists.html">The Housemaid</a>
+        </div>
+        <div class="item">
+            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1475695315l/18045891.jpg" alt="sharp objects" width="350" height="350">
+            <a href="lists.html"> Sharp Objects </a>
+        </div>
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/81JJPDNlxSL._AC_UF894,1000_QL80_.jpg" alt="the silent patient" width="350" height="350">
+            <a href="lists.html">The Silent Patient</a>
+        </div>
+        <div class="item">
+            <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554086139l/19288043.jpg" alt="gone girl" width="350" height="350">
+            <a href="lists.html">Gone Girl</a>
+        </div>
+        <div class="item">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1545494980i/40916679.jpg" alt="aggtm" width="350" height="350">
+            <a href="lists.html">A Good Girls Guide To Murder</a>
+        </div>
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/71ZVpkRIGsL._AC_UF1000,1000_QL80_.jpg" alt="behind closed doors" width="350" height="350">
+            <a href="lists.html">Behind Closed Doors</a>
+        </div>
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/91+LTnTKuOL._AC_UF1000,1000_QL80_.jpg" alt="little women" width="350" height="350">
+            <a href="lists.html">Little Women</a>
+        </div>
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/81eBUKKZYyL._AC_UF894,1000_QL80_.jpg" alt="one of us is lying" width="350" height="350">
+            <a href="lists.html">One Of Us Is Lying</a>
+        </div>
+    </div>
+</body>
+</html>

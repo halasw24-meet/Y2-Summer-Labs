@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>My Lists</h1>
+<h2>Wishlist</h2>
+<ul>
+    {% for book in current_user.wishlist %}
+        <li>{{ book.title }}</li>
+    {% endfor %}
+</ul>
+<h2>Currently Reading</h2>
+<ul>
+    {% for book in current_user.reading_list %}
+        <li>{{ book.title }}</li>
+    {% endfor %}
+</ul>
+<h2>Finished Reading</h2>
+<ul>
+    {% for book in current_user.finished_list %}
+        <li>{{ book.title }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

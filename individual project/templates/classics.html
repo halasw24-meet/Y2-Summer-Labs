@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classics</title>
+    <style>
+       
+        h1 {
+            text-align: center;
+            display: inline-block;
+            margin-right: 1em;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            padding: 20px;
+        }
+        .item {
+            text-align: center;
+        }
+        .item img {
+            width: 100%;
+            height: 100%;
+        }
+        .item a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <hr style="color: #FFEC2D; background-color: #FFEC2D; height: 2px; width: 100%;">
+    <center>
+        <a href= "{{url_for('classics')}}" ><h1 style="font-family:tempus sans itc; color: darkred; ">CLASSICS</h1></a> 
+        <a href="{{url_for('romance')}}"><h1 style="font-family:tempus sans itc; color: black;">ROMANCE</h1></a>
+        <a href="{{url_for('home')}}"><h1 style="font-family:tempus sans itc; color: black;">HOME</h1></a> 
+        <a href="{{url_for('mentalhealth')}}"><h1 style="font-family:tempus sans itc;color: black">MENTAL HEALTH</h1></a>
+        <a href="{{url_for('fantasy')}}"><h1 style="font-family:tempus sans itc;color: black">FANTASY</h1></a>  
+        <a href="{{url_for('mystery')}}"><h1 style="font-family:tempus sans itc;color: black">MYSTERY</h1></a>
+    </center> 
+    <hr style="color: #FFEC2D; background-color: #FFEC2D; height: 2px; width: 100%;">
+    <div class="container">
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/614LavjvoLL._AC_UF1000,1000_QL80_.jpg" alt="the cather in the rye" width="350" height="350">
+            <a href="lists.html">The Catcher In The Rye </a>
+        </div>
+        <div class="item">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1590930002i/49552.jpg" alt="the stranger" width="350" height="350">
+            <a href="lists.html"> The Stranger </a>
+        </div>
+        <div class="item">
+            <img src="https://www.faber.co.uk/wp-content/uploads/2022/09/Bell-Jar-2.jpg" alt="the bell jar" width="350" height="350">
+            <a href="lists.html">The Bell Jar</a>
+        </div>
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/71O2XIytdqL._AC_UF1000,1000_QL80_.jpg" alt="crime and punishment" width="350" height="350">
+            <a href="lists.html">Crime And Punishment</a>
+        </div>
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/81pwJjgcwwL._AC_UF1000,1000_QL80_.jpg" alt="jane eyre" width="350" height="350">
+            <a href="lists.html">Jane Eyre</a>
+        </div>
+        <div class="item">
+            <img src="https://almabooks.com/wp-content/uploads/2016/10/9781847493729.jpg" alt="the picture of dorian gray" width="350" height="350">
+            <a href="lists.html">The Picture Of Dorian Gray</a>
+        </div>
+        <div class="item">
+            <img src="https://cdn2.penguin.com.au/covers/400/9780241321645.jpg" alt="Frankenstein" width="350" height="350">
+            <a href="lists.html">Frankenstein</a>
+        </div>
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/71FxgtFKcQL._AC_UF1000,1000_QL80_.jpg" alt="to kill a mockingbird" width="350" height="350">
+            <a href="lists.html">To Kill A MockingBird</a>
+        </div>
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/91Lbhwt5RzL._AC_UF894,1000_QL80_.jpg" alt="animal farm" width="350" height="350">
+            <a href="lists.html">Animal Farm</a>
+        </div>
+    </div>
+</body>
+</html>

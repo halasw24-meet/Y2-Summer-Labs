@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signin</title>
+</head>
+<body style="background-color: #00D5F2">
+    <form method="POST" action="/signin">
+        <h4>Log in to your account</h4>
+        <p>Please fill up your information below to sign in.</p>
+        <label>Email Address</label>
+        <div>
+            <input type="email" name="email" id="emailStr" placeholder="Email Address" required>
+        </div>
+        <label>Password</label>
+        <div class="input-group">
+            <input type="password" name="password" placeholder="Password" minlength="6" required>
+        </div>
+        <div>
+            <input type="submit" value="Submit"/>
+        </div>
+    </form>
+    <br>
+    <a href="/"><button>Signup</button></a>
+</body>
+</html>

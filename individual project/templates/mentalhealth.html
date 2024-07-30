@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health</title>
+    <style>
+       
+        h1 {
+            text-align: center;
+            display: inline-block;
+            margin-right: 1em;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 50px;
+            padding: 20px;
+        }
+        .item {
+            text-align: center;
+        }
+        .item img {
+            width: 100%;
+            height: 100%;
+        }
+        .item a {
+            display: block;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .item a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <hr style="color: #FFEC2D; background-color: #FFEC2D; height: 2px; width: 100%;">
+    <center>
+        <a href= "{{url_for('classics')}}" ><h1 style="font-family:tempus sans itc; color: black; ">CLASSICS</h1></a> 
+        <a href="{{url_for('romance')}}"><h1 style="font-family:tempus sans itc; color: black;">ROMANCE</h1></a>
+        <a href="{{url_for('home')}}"><h1 style="font-family:tempus sans itc; color: black;">HOME</h1></a> 
+        <a href="{{url_for('mentalhealth')}}"><h1 style="font-family:tempus sans itc;color: darkred">MENTAL HEALTH</h1></a>
+        <a href="{{url_for('fantasy')}}"><h1 style="font-family:tempus sans itc;color: black">FANTASY</h1></a>  
+        <a href="{{url_for('mystery')}}"><h1 style="font-family:tempus sans itc;color: black">MYSTERY</h1></a>
+    </center> 
+    <hr style="color: #FFEC2D; background-color: #FFEC2D; height: 2px; width: 100%;">
+    <div class="container">
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/71HcEbK3pEL._AC_UF1000,1000_QL80_.jpg" alt="the secret history" width="350" height="350">
+            <a href="page1.html">The Secret History </a>
+        </div>
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzdjZDYwM2QtMGNlZS00MGQzLTlhMjctYTU4NWI5MWJlYmQwXkEyXkFqcGdeQXVyMTAwMzUyOTc@._V1_.jpg" alt="girl interrupted" width="350" height="350">
+            <a href="page2.html"> Girl, Interrupted </a>
+        </div>
+        <div class="item">
+            <img src="https://miro.medium.com/v2/resize:fit:503/0*dhHcw11MGgDeyP4F.jpg" alt="the perks of being a wallflower" width="350" height="350">
+            <a href="page3.html">The Perks Of Being A Wallflower</a>
+        </div>
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/91nTClkODkL._AC_UF1000,1000_QL80_.jpg" alt="looking for alaska" width="350" height="350">
+            <a href="page4.html">Looking For Alaska</a>
+        </div>
+        <div class="item">
+            <img src="https://www.booknet.co.il/Images/Site/Products/9781780749457.jpg" alt="girl in pieces" width="350" height="350">
+            <a href="page5.html">Girl In Pieces</a>
+        </div>
+        <div class="item">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1571423190i/41057294.jpg" alt="normal people" width="350" height="350">
+            <a href="page6.html">Normal People</a>
+        </div>
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/71If19m2RXL._AC_UF1000,1000_QL80_.jpg" alt="a little life" width="350" height="350">
+            <a href="page7.html">A Little Life</a>
+        </div>
+        <div class="item">
+            <img src="https://m.media-amazon.com/images/I/91JTGZzlzbL._AC_UF1000,1000_QL80_.jpg" alt="all the bright places" width="350" height="350">
+            <a href="page8.html">All The Bright Places </a>
+        </div>
+        <div class="item">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1646444605i/485894.jpg" alt="the metamorphosis" width="350" height="350">
+            <a href="">The Metamorphosis</a>
+        </div>
+    </div>
+</body>
+</html>

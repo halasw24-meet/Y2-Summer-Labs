@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>{{ book.title }}</h1>
+<img src="{{ book.cover_url }}" alt="{{ book.title }}">
+<p>Author: {{ book.author }}</p>
+<form method="POST">
+    <button type="submit" name="action" value="wishlist">Add to Wishlist</button>
+    <button type="submit" name="action" value="reading">Add to Currently Reading</button>
+    <button type="submit" name="action" value="finished">Add to Finished Reading</button>
+</form>
+{% endblock %}
